@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>a{
+            color: red;
+        }
+        div>p{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+作用:根据HTML标签的嵌套关系，选择父元素子代中满足条件的元素选择器语法:选择器1>选择器2{css}
+结果:
+在选择器1所找到标签的子代(儿子)中，找到满足选择器2的标签，设置样式注意点:
+1.子代只包括:儿子
+2.子代选择器中，选择器与选择器之前通过>隔开    
+-->
+    <div>
+        <a href="#">点我</a>
+        <div>
+            <p>点我</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dad .son{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    作用:根据HTML标签的嵌套关系，选择父元素后代中满足条件的元素
+    选择器语法:选择器1选择器2{css)
+    结果:
+    在选择器1所找到标签的后代(儿子、孙子、重孙子...)中，找到满足选择器2的标签，设置样式¥注意点:
+    1.后代包括:儿子、孙子、重孙子......
+    2.后代选择器中，选择器与选择器之前通过空格隔开
+    -->
+    <p>我是p标签</p>
+    <div class="dad">
+        1
+        <p class="son">我是小p</p>
+    </div>
+</body>
+</html>
